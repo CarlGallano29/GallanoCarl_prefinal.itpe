@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LENOVOSS</title>
+    <style>
+        /* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #473a3f, #fbb03b);
+    color: white;
+ 
+}
+
+
+header {
+    padding: 20px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(243, 243, 243);
+    font-weight: bold;
+    transition: color 0.3s ease;
+    
+}
+
+
+nav ul li a:hover {
+    color: #000000; 
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo img {
+        margin-bottom: 10px;
+        height: 40px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }----------
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.content {
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h1 .highlight {
+    color: #fbb03b;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+.specs-list {
+    list-style-type: disc;
+    margin-top: 25px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: rgb(250, 250, 250);
+}
+
+.specs-list li {
+    margin-bottom: 10px;
+}
+
+
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+
+.primary {
+    background-color: #ff4757;
+    color: white;
+    margin-right: 20px;
+}
+
+
+.secondary {
+    background-color: white;
+    color: #ff4757;
+    margin-left: 10px;
+}
+
+
+.btn:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+.similar {
+    background-color: #07090a; 
+    color: white;
+    margin-left: 10px;
+}
+
+.similar {
+    background-color: #007bff; 
+    color: white;
+    display: inline-block;
+    margin-top: 80px; 
+    text-align: center;
+}
+
+.similar:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+
+    .image img {
+        width: 200%;
+
+    }
+}
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.icon {
+    font-size: 40px;
+    margin-right: 15px;
+    color: white;
+}
+
+.contact-numbers {
+    flex: 1;
+    text-align: left;
+}
+
+.contact-numbers a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.chat-button {
+    flex: 1;
+    text-align: right;
+}
+
+.chat {
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.chat i {
+    margin-right: 8px;
+    color: blue;
+}
+
+.chat:hover {
+    background-color: lightgray;
+}
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="lenovo.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section class="hero">
+        <div class="content">
+            <h1>
+                <span>Calibrated for competition <br></span> 
+                <span class="highlight">Legion 5 Pro</span> 
+                <span>With</span> <strong>AMD Ryzen™ 9 6900HX Mobile Processor</strong>
+            </h1>
+            <p>Speed meets endurance when you play with a gaming laptop powered by AMD Ryzen™ 6000 Series Mobile Processors. Seize the pure performance you need to win, with longer battery life than ever before.</p>
+            
+            <ul class="specs-list">
+    <li><strong>Processor:</strong> AMD Ryzen™ 9 6900HX</li>
+    <li><strong>Graphics:</strong> NVIDIA® GeForce RTX™ 3070 Ti</li>
+    <li><strong>Display:</strong> 16" QHD+ (2560 x 1600) 165Hz, 3ms Response</li>
+    <li><strong>RAM:</strong> 32GB DDR5 4800MHz</li>
+    <li><strong>Storage:</strong> 1TB PCIe SSD</li>
+    <li><strong>Cooling:</strong> Legion Coldfront 4.0</li>
+    <li><strong>Battery Life:</strong> Up to 8 hours</li>
+    <li><strong>Keyboard:</strong> RGB Backlit TrueStrike Keyboard</li>
+</ul>
+
+<div class="buttons">
+    <a href="#" class="btn primary">
+        <i class="fas fa-shopping-bag" style="margin-right: 20px;"></i> BUY NOW
+    </a>
+    <a href="#" class="btn secondary">
+        <i class="fas fa-cart-plus"></i> ADD TO CART
+    </a>
+    <br> <!-- Line break to move the next button below -->
+    <a href="#" class="btn similar">
+        <i class="fas fa-search"></i> SHOP SIMILAR PRODUCTS 
+    </a>
+</div>
+
+        </div>
+        <div class="image">
+            <img src="leno.avif" alt="Legion 5 Pro">
+        </div>
+    </section>
+    <div class="contact-section">
+    <div class="contact-info">
+        <i class="fas fa-user-circle icon"></i>
+        <div class="text">
+            <h3>Need shopping help?</h3>
+            <p>Contact : Carl Joseph Gallano.<br>Available <strong>Mon-Fri: 9:00am – 6:00pm</strong></p>
+        </div>
+    </div>
+    <div class="contact-numbers">
+        <p><strong>For Personal Purchase:</strong><br><a href="tel:1-800-1601-0084">1-800-1601-0084</a>, Press option <strong>#2</strong></p>
+        <p><strong>For Business Purchase:</strong><br><a href="tel:1-800-1601-0084">09121366361</a>, Press option <strong>#1</strong></p>
+    </div>
+    <div class="chat-button">
+        <a href="#" class="btn chat">
+            <i class="fas fa-comments"></i> Chat with us!
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
